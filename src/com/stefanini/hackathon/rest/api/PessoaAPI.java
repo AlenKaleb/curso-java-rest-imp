@@ -13,7 +13,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.stefanini.hackathon.rest.dto.PessoaDTO;
 import com.stefanini.hackathon.rest.entity.Pessoa;
 import com.stefanini.hackathon.rest.exceptions.NegocioException;
 import com.stefanini.hackathon.rest.parses.PessoaParser;
@@ -25,7 +24,7 @@ import com.stefanini.hackathon.rest.persistence.Repositorio;
 @Produces(MediaType.APPLICATION_JSON)
 public class PessoaAPI {
 
-	@Inject 
+	@Inject
 	Repositorio repositorio;
 	
 	@Inject
