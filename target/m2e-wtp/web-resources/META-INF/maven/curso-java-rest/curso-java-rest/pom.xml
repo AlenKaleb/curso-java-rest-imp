@@ -12,7 +12,7 @@
 		<hibernate.version>5.2.16.Final</hibernate.version>
 	</properties>
 
-	<dependencies>
+	<dependencies> 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>

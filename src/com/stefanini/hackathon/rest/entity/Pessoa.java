@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 
 @Entity(name = "pessoa")
@@ -18,6 +19,9 @@ public class Pessoa {
 	@Column(name = "nome")
 	private String nome;
 	private String cpf;
+	
+	@Transient
+	private Conta conta;
 	
 	public Pessoa() {
 		
